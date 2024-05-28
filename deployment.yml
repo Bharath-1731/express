@@ -19,6 +19,8 @@ spec:
           image: bharath1731/myapp:latest
           ports:
             - containerPort: 8080
+      imagePullSecrets:
+      - name: dockerhub-secret
 ---
 apiVersion: v1
 kind: Service
